@@ -9,6 +9,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --icon-bg-color: #D9D9D9;
 }
 
 .fa-solid {
@@ -65,7 +66,7 @@ header {
   justify-content: flex-end;
 }
 
-#logo {
+header img {
   position: absolute;
   width: 61.09px;
   height: 19px;
@@ -77,26 +78,28 @@ nav {
   height: 100%;
 }
 
-#menu {
+nav ul {
   display: flex;
   height: 100%;
   gap: 68px;
 }
 
-#menu li {
+nav ul li {
   list-style: none;
   height: 100%;
   padding: 20px;
-  margin-top: 5px;
+  margin-top: 1px;
+  padding: 16px 0;
 }
 
-#menu li:first-child {
+nav ul li:first-child {
   border-top: 2px solid var(--main-color);
 }
 
-a {
+nav ul li a {
   text-decoration: none;
   color: black;
+  width: 100%;
 }
 
 #bar {
@@ -105,12 +108,108 @@ a {
 
 
 /***** Première section ********************/
+/**** a-Formulaire de recherche ****/
 
+.search {
+  margin: 30px 0;
+}
 
+.formulaire {
+  border: 1px solid var(--main-bg-color);
+  border-radius: 25px;
+  width: 377px;
+  height: 49px;
+  margin: 35px 0;
+}
 
+form {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
+form div {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
 
+div i {
+  color: black;
+}
+input {
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+}
 
+button {
+  width: 132px;
+  border: none;
+  background-color: var(--main-color);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+span {
+  color: white;
+  font-weight: bold;
+  text-align: end;
+}
+
+/******* b-Filtres *************/
+.filter {
+  width: 758px;
+  height: 50px;
+  display: flex;
+}
+
+.filter h3 {
+  margin: auto;
+}
+
+.filter div ul {
+  height: 100%;
+  display: flex;
+  list-style: none;
+}
+
+.filter div ul li {
+  width: 173px;
+  height: 100%;
+  border: 2px solid var(--icon-bg-color);
+  border-radius: 25px;
+  margin: 0 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/******* c-aside **********/
+
+aside {
+  display: flex;
+  align-items: center;
+  margin: 35px 0;
+}
+
+aside div {
+  height: 24px;
+  width: 24px;
+  border: 1px solid var(--icon-bg-color);
+  border-radius: 25px;
+  text-align: center;
+}
+
+aside p {
+  margin-left: 10px;
+  text-align: center;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {

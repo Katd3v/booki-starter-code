@@ -17,45 +17,45 @@
 <body>
     <div class="main-container">
         <header>
-            <!-- En tête avec mpgo booki et bare de narivagation avec lien et bordure au survol -->
-            <img src="./images/logo/Booki.png" alt="logo booki" id="logo">
+            <img src="./images/logo/Booki.png" alt="logo booki">
             <nav>
-                <ul id="menu">
+                <ul>
                     <li><a id="bar" href=".hebergements">Hébergements</a></li>
                     <li><a href=".populaires">Activités</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section> 
-                <!-- Cette partie contient le titre et la localisation de l'activité -->
+            <section class="search"> 
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
-                <div id="locationCity">
+                <div class="formulaire">
                     <form action="#">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <input type="search" name="location" id="city" value="Marseille, France">
-                        <button type="submit">Rechercher</button>
+                        <div>
+                            <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                        </div>
+                        <input type="search" name="location" style="font-weight: bold" value="Marseille, France">
+                        <button type="submit"><span>Rechercher</span></button>
                     </form>
                 </div>
-            </section>
-            <div id="filter">
-                <!-- Cette partie contient de filtre des activités -->
-                <p>Filtres</p>
-                <div>
-                    <ul>
-                        <li class="theme"><i class="fa-solid fa-money-bill-wave"></i> Économique</li>  <!--faut-il mettre une balise pour économique ?-->
-                        <li class="theme"><i class="fa-solid fa-person"></i> Familial</li>
-                        <li class="theme"><i class="fa-solid fa-heart"></i> Romantique</li>
-                        <li class="theme"><i class="fa-solid fa-fire"></i> Nos pépites</li>
-                    </ul>
+                <div class="filter">
+                    <h3>Filtres</h3>
+                    <div>
+                        <ul>
+                            <li><i class="fa-solid fa-money-bill-wave"></i><strong> Économique</strong></li> 
+                            <li><i class="fa-solid fa-person"></i><strong> Familial</strong></li>
+                            <li><i class="fa-solid fa-heart"></i><strong> Romantique</strong></li>
+                            <li><i class="fa-solid fa-fire"></i> <strong> Nos pépites</strong></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <!-- résultat de la recherche. A inclure dans la div précédente ?  -->
-                <i class="fa-solid fa-info"></i>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
+                <aside>
+                    <div>
+                        <i class="fa-solid fa-info"></i>
+                    </div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </aside>
+            </section>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <h2 class=".section-title">Hébergement à Marseille</h2>
