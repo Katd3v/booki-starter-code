@@ -191,15 +191,25 @@ span {
   align-items: center;
 }
 
-/******* c-aside **********/
+.filter div ul li div {
+  display: flex;
+  align-items: center;
+}
 
-aside {
+.filter div ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/******* informations **********/
+
+.info {
   display: flex;
   align-items: center;
   margin: 35px 0;
 }
 
-aside div {
+.info div {
   height: 24px;
   width: 24px;
   border: 1px solid var(--icon-bg-color);
@@ -207,15 +217,15 @@ aside div {
   text-align: center;
 }
 
-aside p {
+.info p {
   margin-left: 10px;
   text-align: center;
 }
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hebergements-and-populaires section {
@@ -223,6 +233,7 @@ aside p {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    margin-bottom: 35px;
 }
 
 
@@ -240,11 +251,13 @@ aside p {
 }
 
 .article .card {
-  width: 240px;
+  width: 30%;
   height: 207px;
   margin: 15px 0;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
 .article .card img{
@@ -259,6 +272,7 @@ aside p {
     flex-direction: column;
     height: 100%;
     justify-content: space-evenly;
+    padding: 0 15px;
 }
 
 .hebergements p a {
@@ -299,6 +313,7 @@ aside p {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    
 }
 
 .populaires-cards .card-title {
@@ -313,6 +328,84 @@ aside p {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+
+/*********** Activités ************/
+
+.activities {
+  width: 100%;
+  height: 560px;
+}
+.activities div h2 {
+  margin: 30px;
+}
+
+.activities div div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+figure {
+  width: 297.5px;
+  height: 439px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  border-radius: 20px;
+}
+
+figure img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+figcaption {
+  font-weight: bold;
+  padding: 20px 19px;
+}
+
+
+/***************** footer ******************/
+
+footer {
+  width: 100%;
+  height: 163px;
+  background-color: var(--main-bg-color);
+  display: flex;
+}
+
+footer div {
+  width: 33.3%;
+  padding: 20px;
+}
+
+footer span {
+  color: black;
+}
+
+footer div ul {
+  display: flex;
+  flex-direction: column;
+
+}
+
+footer div ul li {
+  list-style: none;
+  margin-top: 15px;
+}
+
+footer div ul li a {
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+
+
+
 
 
 
