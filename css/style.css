@@ -122,14 +122,6 @@ nav ul li a {
   margin: 30px 0;
 }
 
-.formulaire {
-  border: 1px solid var(--main-bg-color);
-  border-radius: 25px;
-  width: 377px;
-  height: 49px;
-  margin: 35px 0;
-}
-
 .search div h1 {
   font-style: normal;
   font-weight: 700;
@@ -145,14 +137,21 @@ nav ul li a {
   line-height: 19px;
 }
 
-form {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
+.search .formulaire {
+  border: 1px solid var(--main-bg-color);
+  border-radius: 15px;
+  width: 376px;
+  height: 49px;
+  margin: 34px 0;
 }
 
-form div {
-  width: 50px;
+.formulaire form {
+  height: 100%;
+  display: flex;
+}
+
+.formulaire form div {
+  width: 52px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -162,30 +161,36 @@ form div {
   border-bottom-left-radius: 15px;
 }
 
-div i {
+.formulaire div i {
   color: black;
+  font-size: 1.15rem;
 }
-input {
+
+.formulaire input {
   border: none;
-  border-radius: 25px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.10rem;
   text-align: center;
 }
 
 button {
-  width: 132px;
   border: none;
   background-color: var(--main-color);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
-span {
+.formulaire span {
   color: white;
-  font-weight: bold;
-  text-align: end;
+  padding: 15px 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.12rem;
 }
 
-/******* b-Filtres *************/
+
+/************** b-Filtres *************/
 .filter {
   width: 758px;
   height: 50px;
@@ -194,6 +199,10 @@ span {
 
 .filter h3 {
   margin: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .filter div ul {
@@ -203,8 +212,8 @@ span {
 }
 
 .filter div ul li {
-  width: 170px;
-  height: 100%;
+  padding: 4px 19px;
+  /* height: 100%; */
   border: 2px solid var(--icon-bg-color);
   border-radius: 25px;
   margin: 0 7.5px;
@@ -221,6 +230,13 @@ span {
 .filter div ul li i {
   font-size: 20px;
   margin-right: 10px;
+}
+
+.filter strong {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
 }
 
 /******* informations **********/
