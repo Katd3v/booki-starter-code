@@ -18,6 +18,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -81,8 +82,10 @@ nav {
 
 nav ul {
   display: flex;
+  justify-content: space-around;
   height: 100%;
   gap: 68px;
+  margin: 0 25px;
 }
 
 nav ul li {
@@ -90,7 +93,7 @@ nav ul li {
   height: 100%;
   padding: 20px;
   margin-top: 1px;
-  padding: 16px 0;
+  padding: 13px 0;
 }
 
 nav ul li:first-child {
@@ -101,6 +104,10 @@ nav ul li a {
   text-decoration: none;
   color: black;
   width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 #bar {
@@ -123,6 +130,21 @@ nav ul li a {
   margin: 35px 0;
 }
 
+.search div h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+
+.search div p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
 form {
   height: 100%;
   display: flex;
@@ -136,8 +158,8 @@ form div {
   justify-content: center;
   align-items: center;
   background-color: var(--main-bg-color);
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 div i {
@@ -153,8 +175,8 @@ button {
   width: 132px;
   border: none;
   background-color: var(--main-color);
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 span {
