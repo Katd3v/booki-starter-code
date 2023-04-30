@@ -116,7 +116,7 @@ nav ul li a {
 
 
 /***** Première section ********************/
-/**** a-Formulaire de recherche ****/
+/**** Formulaire de recherche ****/
 
 .search {
   margin: 30px 0;
@@ -140,7 +140,7 @@ nav ul li a {
 .search .formulaire {
   border: 1px solid var(--main-bg-color);
   border-radius: 15px;
-  width: 376px;
+  max-width: 377px;
   height: 49px;
   margin: 34px 0;
 }
@@ -151,7 +151,7 @@ nav ul li a {
 }
 
 .formulaire form div {
-  width: 52px;
+  min-width: 50px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -171,11 +171,15 @@ nav ul li a {
   font-weight: 700;
   font-style: normal;
   font-size: 1.10rem;
+}
+
+.formulaire input[value] {
   text-align: center;
 }
 
-button {
+.formulaire button {
   border: none;
+  max-width: 132px;
   background-color: var(--main-color);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -190,15 +194,15 @@ button {
 }
 
 
-/************** b-Filtres *************/
+/************** Filtres *************/
 .filter {
-  width: 758px;
   height: 50px;
   display: flex;
+  align-items: center;
 }
 
-.filter h3 {
-  margin: auto;
+.filter div h3 {
+  margin-right: 7.5px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -206,14 +210,12 @@ button {
 }
 
 .filter div ul {
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   list-style: none;
 }
 
 .filter div ul li {
-  padding: 4px 19px;
-  /* height: 100%; */
   border: 2px solid var(--icon-bg-color);
   border-radius: 25px;
   margin: 0 7.5px;
@@ -229,7 +231,7 @@ button {
 
 .filter div ul li i {
   font-size: 20px;
-  margin-right: 10px;
+  margin-left: 19px;
 }
 
 .filter strong {
@@ -237,6 +239,7 @@ button {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+  padding: 15px 19px 15px 10px;
 }
 
 /******* informations **********/
@@ -376,6 +379,11 @@ button {
 }
 .activities div h2 {
   margin: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  
 }
 
 .activities div div {
@@ -385,14 +393,16 @@ button {
 
 figure {
   width: 297.5px;
-  height: 439px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  max-height: 439px;
   border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  display: flex;
+  flex-direction: column;
 }
 
 figure img {
   width: 100%;
-  height: 80%;
+  height: 380px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
@@ -400,6 +410,8 @@ figure img {
 figcaption {
   font-weight: bold;
   padding: 20px 19px;
+  background: #FFFFFF;
+  border-radius: 0px 0px 20px 20px;
 }
 
 
@@ -407,7 +419,7 @@ figcaption {
 
 footer {
   width: 100%;
-  height: 163px;
+  max-height: 163px;
   background-color: var(--main-bg-color);
   display: flex;
 }
@@ -419,6 +431,10 @@ footer div {
 
 footer span {
   color: black;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 footer div ul {
@@ -453,6 +469,21 @@ footer div ul li a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  /*********** filtres ***************/
+  .filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+  }
+
+  .filter h3 {
+    margin: 0;
+  }
+
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -487,5 +518,5 @@ footer div ul li a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+ 
 }
