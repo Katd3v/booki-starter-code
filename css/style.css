@@ -20,18 +20,40 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
 
 .section-title {
-    margin: 0;
-    font-size: 22px;
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.bold-font {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .card {
@@ -84,7 +106,7 @@ nav {
   right: 25px;
 }
 
-nav ul {
+.menu {
   display: flex;
   justify-content: space-around;
   height: 100%;
@@ -92,7 +114,7 @@ nav ul {
 
 }
 
-nav ul li {
+.menu li {
   list-style: none;
   height: 100%;
   padding: 20px;
@@ -100,18 +122,8 @@ nav ul li {
   padding: 13px 0;
 }
 
-nav ul li:first-child {
+.menu li:first-child {
   border-top: 2px solid var(--main-color);
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  width: 100%;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
 }
 
 #bar {
@@ -125,25 +137,15 @@ nav ul li a {
   margin: 30px 0;
 }
 
-.search div h1 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
+.search .section-title {
   margin-bottom: 8px;
   align-self: stretch;
 }
 
-.search div p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-}
 
 /** bloc de recherche par ville **/
 
-.search .formulaire {
+.formulaire {
   border: 1px solid var(--main-bg-color);
   border-radius: 15px;
   max-width: 377px;
@@ -174,9 +176,6 @@ nav ul li a {
 
 .formulaire input {
   border: none;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.10rem;
 }
 
 .formulaire input[value] {
@@ -191,7 +190,7 @@ nav ul li a {
   border-bottom-right-radius: 15px;
 }
 
-.formulaire .btnSearch {
+.btnSearch {
   color: white;
   padding: 15px 16px;
   font-style: normal;
@@ -211,20 +210,16 @@ nav ul li a {
   align-items: center;
 }
 
-.filter div h3 {
+.filter .bold-font {
   margin-right: 7.5px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
 }
 
-.filter div ul {
+.filter ul {
   display: flex;
   list-style: none;
 }
 
-.filter div ul li {
+.list-filter {
   border: 2px solid var(--icon-bg-color);
   border-radius: 25px;
   margin: 0 7.5px;
@@ -233,12 +228,12 @@ nav ul li a {
   align-items: center;
 }
 
-.filter div ul li div {
+.list-filter div {
   display: flex;
   align-items: center;
 }
 
-.filter div ul li i {
+.icon-filter {
   font-size: 20px;
   margin-left: 19px;
 }
@@ -295,14 +290,17 @@ nav ul li a {
 .article {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.article a {
+  width: 30%;
   margin: 15px 0;
 }
 
 .article .card {
-  width: 30%;
   height: 207px;
-  margin: 15px 0;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
@@ -515,7 +513,7 @@ footer div ul li a {
     gap: 20px;
   }
 
-  .filter div ul li {
+  .list-filter {
     margin-right: 15px;
   }
 
@@ -599,22 +597,22 @@ footer div ul li a {
     display: block;
   }
 
-  header nav ul {
+  .menu {
     gap: 0;
   }
 
-  header nav ul li {
+  .menu li {
     padding : 0;
     width: 50%;
     border-bottom: 2px solid var(--main-bg-color);
   }
 
-  header nav ul li:first-child {
+  .menu li:first-child {
     border-top: 0;
     border-bottom: 2px solid var(--main-color);
   }
 
-  header nav ul li a {
+  .menu li a {
     width: 50%;
     margin: 0 auto;
     display: block;
@@ -671,7 +669,7 @@ footer div ul li a {
     gap: 20px 10px;
   }
 
-  .filter div ul li {
+  .list-filter {
     margin: 0;
     width: 162.5px;
     height: 50px;
