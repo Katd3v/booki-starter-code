@@ -206,7 +206,7 @@ nav {
 /** Filtres **/
 
 .filter {
-  max-height: 50px;
+  min-height: 50px;
   display: flex;
   align-items: center;
 }
@@ -382,19 +382,25 @@ transition: 0.5s;
 
 .section-activities {
   width: 100%;
-  height: 560px;
+  padding-bottom: 30px;
 }
+
 .section-activities .section-title {
   margin: 30px;
 }
 
 .activities {
+  padding: 0 30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.activities a {
+  width: 25%;
 }
 
 .figure-activities {
-  width: 297.5px;
   max-height: 439px;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -421,7 +427,7 @@ transition: 0.5s;
 
 footer {
   width: 100%;
-  max-height: 163px;
+  margin-top: 35px;
   background-color: var(--main-bg-color);
   display: flex;
 }
@@ -466,8 +472,11 @@ footer span {
     right: 50px;
   }
 
+  .search {
+    min-height: 322px;
+  }
+
   .filter {
-    height: 91px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -477,6 +486,7 @@ footer span {
   }
 
   .list-filter {
+    margin-left: 0;
     margin-right: 15px;
   }
 
@@ -484,50 +494,46 @@ footer span {
     margin-bottom: 0;
   }
 
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
 
-    .hebergements {
-        width: 100%;
-    }
+  .hebergements {
+    width: 100%;
+  }
 
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
+  .populaires {
+     width: 100%;
+    margin-top: 50px;
+  }
 
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .populaires-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .populaires-cards a {
-        width: 30%;
-    }
+  .populaires-cards a {
+    width: 30%;
+  }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
+  .populaires-cards .card-title {
+    font-size: 14px;
+  }
 
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-
-    .activities {
-      height: 390px;
-    }
+  .populaires-cards .card-subtitle {
+    font-size: 13px;
+  }
     
-    .activities figure {
-      max-width: 193.5px;
-      max-height: 270px;
-    }
+  .figure-activities {
+    max-width: 193.5px;
+    max-height: 270px;
+  }
     
-    .activities figure img {
-      width: 100%;
-      max-height: 200px;
-    }
+  .figure-activities img {
+    width: 100%;
+    max-height: 200px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
