@@ -321,12 +321,12 @@ transition: 0.5s;
   border-top-left-radius: 20px;
 } 
 
-.description{
+.description {
   display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-evenly;
-    padding: 0 15px;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  padding: 0 15px;
 }
 
 
@@ -502,6 +502,10 @@ footer span {
     width: 100%;
   }
 
+  .description p {
+    font-size: 14px;
+  }
+
   .populaires {
      width: 100%;
     margin-top: 50px;
@@ -522,7 +526,7 @@ footer span {
   }
 
   .populaires-cards .card-subtitle {
-    font-size: 13px;
+    font-size: 14px;
   }
     
   .figure-activities {
