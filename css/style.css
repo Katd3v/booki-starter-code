@@ -20,31 +20,28 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-}
-
-.main-container {
+  }
+  
+  .main-container {
     width: 100%;
     max-width: 1440px;
-    min-width: 320px;
+    min-width: 350px;
     padding: 0 50px;
+    margin: 0 auto;
     box-sizing: border-box;
-}
-
-.section-title {
-  margin: 0;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-}
-
-.bold-font {
-  font-style: normal;
-  font-weight: 700;
+  }
+  
+  .section-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  
+  .bold-font {
+    font-style: normal;
+    font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -86,24 +83,17 @@ header {
   width: 100%;
   height: 79px;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+header div {
+  height: 100%;
 }
 
 header img {
-  position: absolute;
   width: 61.09px;
   height: 19px;
-  left: 30px;
-  top: 30px;
-}
-
-nav {
-  position: absolute;
-  max-width: 294px;
-  max-height: 35px;
-  top: 0;
-  right: 25px;
+  margin-top: 30px;
 }
 
 .menu {
@@ -453,6 +443,10 @@ footer span {
   margin-top: 15px;
 }
 
+.list-footer a:hover {
+  text-decoration: underline;
+}
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -463,16 +457,6 @@ footer span {
 
   .bold-font {
     font-size: 18px;
-  }
-
-  header img {
-    padding: 30px 50px;
-    left: 0px;
-    top: 0px;
-  }
-
-  header nav {
-    right: 50px;
   }
 
   .search {
@@ -493,7 +477,7 @@ footer span {
     margin-right: 15px;
   }
 
-  .hebergements-and-populaires section:first-child {
+  .hebergements-and-populaires .hebergements {
     margin-bottom: 0;
   }
 
