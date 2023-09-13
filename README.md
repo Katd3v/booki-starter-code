@@ -1,8 +1,8 @@
-# PROJET 1 - Créez la page d'une agence de voyage
+# PROJET 2 - Créez la page d'une agence de voyage
 
 ## Contexte
 
-Ce projet est réalisé dans le cadre d'une formation en tant que développeur web qui a commencé le 14/04/2023.
+Ce projet est réalisé dans le cadre d'une formation avec Openclassrooms en tant que développeur web qui a commencé le 14/04/2023.
 
 ## Mission
 
